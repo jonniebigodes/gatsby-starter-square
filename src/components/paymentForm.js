@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "./square.css"
 const PaymentForm = ({ paymentForm, ammount }) => {
   const [cardBrand, setCardBrand] = useState("")
@@ -6,7 +6,6 @@ const PaymentForm = ({ paymentForm, ammount }) => {
   const [googlePay, setGooglePay] = useState(false)
   const [applePay, setApplePay] = useState(false)
   const [masterpass, setMasterpass] = useState(false)
-
   const config = {
     // Initialize the payment form elements
 
@@ -123,7 +122,9 @@ const PaymentForm = ({ paymentForm, ammount }) => {
             document.getElementById("error").style.display = "none"
             break
           case "cardBrandChanged":
-            setCardBrand(inputEvent.cardBrand)
+            if (inputEvent.cardBrand !== "unknown") {
+              setCardBrand(inputEvent.cardBrand)
+            }
             break
           case "postalCodeChanged":
             break
@@ -133,7 +134,9 @@ const PaymentForm = ({ paymentForm, ammount }) => {
       },
     },
   }
+  // creates a new instance of the component
   paymentForm = new paymentForm(config, ammount)
+
   paymentForm.build()
 
   const requestCardNonce = () => {
@@ -142,7 +145,14 @@ const PaymentForm = ({ paymentForm, ammount }) => {
 
   return (
     <div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "space-around",
+          margin: "1rem",
+        }}
+      >
         <button onClick={() => setGooglePay(!googlePay)}>Test googlePay</button>
         <button onClick={() => setMasterpass(!masterpass)}>
           Test masterpass
@@ -151,10 +161,20 @@ const PaymentForm = ({ paymentForm, ammount }) => {
       </div>
       <div>
         <div id="form-container">
-          <div id="sq-card-number"></div>
-          <div className="third" id="sq-expiration-date"></div>
-          <div className="third" id="sq-cvv"></div>
-          <div className="third" id="sq-postal-code"></div>
+          <div id="sq-ccbox">
+            <p>
+            <span className='leftCenter'>Enter Card Info Below </span>
+              <span className='blockRight'>
+                {cardBrand.toUpperCase()}
+              </span>
+            </p>
+            <div id="sq-card-number"></div>
+            <input type="hidden" id="card-nonce" name="nonce" />
+            <div className="third" id="sq-expiration-date"></div>
+            <div className="third" id="sq-cvv"></div>
+            <div className="third" id="sq-postal-code"></div>
+            <p style={{ textAlign: "center" }} id="error" />
+          </div>
           <button
             id="sq-creditcard"
             className="button-credit-card"
@@ -165,11 +185,6 @@ const PaymentForm = ({ paymentForm, ammount }) => {
           </button>
           <div id="sq-walletbox">
             <button
-              style={{ display: applePay ? "inherit" : "none" }}
-              className="button-applepay"
-              id="sq-apple-pay"
-            />
-            <button
               style={{ display: masterpass ? "block" : "none" }}
               className="button-masterpass"
               id="sq-masterpass"
@@ -178,6 +193,11 @@ const PaymentForm = ({ paymentForm, ammount }) => {
               style={{ display: googlePay ? "inherit" : "none" }}
               className="button-google-pay"
               id="sq-google-pay"
+            />
+            <button
+              style={{ display: applePay ? "inherit" : "none" }}
+              className="button-applepay"
+              id="sq-apple-pay"
             />
             <hr />
           </div>

@@ -8,8 +8,8 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Gatsby Square Starter`,
-    description: `This barebones starter ships with the minimal configuration you might need to setup Gatsby and Square`,
-    author: `jonniebigodes`,
+    description: `This barebones starter ships with the minimal configuration you might need to setup Square payments in a Gatsby project`,
+    author: `@jonniebigodes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
