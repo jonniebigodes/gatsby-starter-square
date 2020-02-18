@@ -18,6 +18,7 @@ This minimal starter ships with the main Gatsby configuration files you might ne
     ```
 
 2. **Manually clone and install the starter.**
+
     Alternatively you clone the repo directly with:
 
     ```shell
@@ -50,27 +51,27 @@ This minimal starter ships with the main Gatsby configuration files you might ne
 
     Create both `.env.development` and `.env.production` files and paste the keys you obtained earlier, they're probably be the sandbox ones. 
 
-    Run the following command:
+    Run the following command based on your chosen package manager:
 
     ```shell
     yarn start
     ```
 
+    ```shell
+    npm run start
+    ```
+
     You might be wondering why should i use the same sandbox keys in both files. 
     
-    The shortest answer is that when you run `yarn start` or `npm run build` netlify-lambda will generate a production build of the sample serverless function provided in this starter what it means is that it's expecting a set of environment variables to be set to allow the payment process to be complete. 
-
-    Also to avoid having to install the [netlify-cli](https://cli.netlify.com/)
-
-
+    The shortest answer is that when you run `yarn start` or `npm run start` netlify-lambda will generate a production build of the sample serverless function provided in this starter.
+    
+    what it means is that it's expecting a set of environment variables to be set to allow the payment process to be complete. 
 
 5.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `my-awesome-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## What's inside?
 
