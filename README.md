@@ -27,14 +27,11 @@ This minimal starter ships with the main Gatsby configuration files you might ne
     Navigate to the folder where the repo was cloned:
     
     ```shell
-    cd my-awesome-site
+    cd gatsby-starter-square
     ```
     
-    And install the dependencies with either yarn or npm:
+    And install the dependencies with your package manager of choice.
 
-    ```shell
-    yarn
-    ```
 3. **Setup a Square account**
 
     Set up a developer account in the [Square developer portal](https://squareup.com/signup?v=developers) to get started. 
@@ -111,17 +108,17 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 8.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+9.  **`LICENSE`**: This starter is licensed under the MIT license.
 
 10.  **`netlify.toml`**: The configuration file required for building the starter in [Netlify](https://www.netlify.com/). 
 
-10. **`package-lock.json`**  and **`yarn.lock`** (See `package.json` below, first). Both these files are automatically generated based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`package-lock.json`** and **`yarn.lock`** (See `package.json` below, first). Both these files are automatically generated based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Usefull Resources
+## Usefull Resources
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
@@ -133,7 +130,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For a set of testing values for your site, head to [this page](https://developer.squareup.com/docs/testing/test-values).** In tehre you'll find a list of card values that can be used for testing purposes.
 
-## 💫 Deploy
+## Deploy
 
 Before you deploy don't forget to change your app from sandbox mode to production mode in the [Square developer portal](https://developer.squareup.com/apps) and adjust the variables and endpoints acordingly.
 
