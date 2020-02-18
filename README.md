@@ -50,9 +50,13 @@ This minimal starter ships with the main Gatsby configuration files you might ne
 
     Run the following command based on your chosen package manager:
 
+    with Yarn:
+    
     ```shell
     yarn start
     ```
+    
+    or with npm:
 
     ```shell
     npm run start
