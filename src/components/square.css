@@ -171,6 +171,7 @@ fieldset {
 .sq-input--error {
   box-shadow: inset 0px 0px 0px 3px rgba(255, 0, 0, 0.5);
 }
+
 #sq-ccbox {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
@@ -193,4 +194,21 @@ fieldset {
 .blockRight{
   display: block;
   float: right,
+}
+.customerInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#cc-field-wrapper {
+  padding-top: 50px;
+  margin: 0;
+  display: inline-flex;
+}
+#error{
+  background-color: rgb(15, 48, 87);
+  color: white;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }

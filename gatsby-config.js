@@ -3,6 +3,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const proxy= require('http-proxy-middleware');
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   /* Your site config here */
@@ -10,6 +14,17 @@ module.exports = {
     title: `Gatsby Square Starter`,
     description: `This barebones starter ships with the minimal configuration you might need to setup Square payments in a Gatsby project`,
     author: `@jonniebigodes`,
+  },
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      proxy({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
