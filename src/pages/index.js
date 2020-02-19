@@ -25,7 +25,7 @@ const loadSquareSdk = () => {
 
 const IndexPage = () => {
   const [squareStatus, setSquareStatus] = useState("notLoaded")
-
+  
   /**
    * Use effect hook [https://reactjs.org/docs/hooks-effect.html]
    * to call the function to set the square sdk upon mounting the page

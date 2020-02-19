@@ -1,9 +1,7 @@
 const crypto = require("crypto")
 const squareConnect = require("square-connect")
+require("dotenv").config({})
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
 exports.handler = async (event, context) => {
   console.log(`function method:${event.httpMethod}`)
   try {
@@ -27,7 +25,6 @@ exports.handler = async (event, context) => {
 
     // fetches the token (don't forget that this might be using the sandbox one, adjust accordingly when deploying)
     const token = process.env.GATSBY_SQUARE_APLLICATION_TOKEN
-
     if (!token) {
       return {
         statusCode: 405,
