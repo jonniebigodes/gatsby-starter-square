@@ -4,9 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const proxy= require('http-proxy-middleware');
-/* require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-}) */
+
 require("dotenv").config({})
 
 module.exports = {
