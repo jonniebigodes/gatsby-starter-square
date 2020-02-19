@@ -17,41 +17,22 @@ This minimal starter ships with the main Gatsby configuration files you might ne
     gatsby new [my-awesome-site] https://github.com/jonniebigodes/gatsby-starter-square
     ```
 
-2. **Manually clone and install the starter.**
-
-    Alternatively you clone the repo directly with:
-
-    ```shell
-    git clone https://github.com/jonniebigodes/gatsby-starter-square
-    ```
-    Navigate to the folder where the repo was cloned:
-    
-    ```shell
-    cd gatsby-starter-square
-    ```
-    
-    And install the dependencies with your package manager of choice.
-
-3. **Setup a Square account**
+2. **Setup a Square account**
 
     Set up a developer account in the [Square developer portal](https://squareup.com/signup?v=developers) to get started. 
 
     Go through the steps to create a app (don't use the word **square** as it's a reserved word) and don't forget to save the token, application id and localization id provided. As they are required for your project. 
 
-4.  **Start developing.**
+3.  **Start developing.**
 
     Navigate into your new site’s directory and take a look at the `.env.sample` file, this file works as a baseline to store your Square application keys.
 
-    ```shell
-    cd my-awesome-site/
-    ```
-
-    Create both `.env.development` and `.env.production` files and paste the keys you obtained earlier, they're probably be the sandbox ones. 
-
+    Create your own `.env` file with the information provided in the Square developer portal.
+    
     Run the following command based on your chosen package manager:
 
     with Yarn:
-    
+
     ```shell
     yarn start
     ```
@@ -62,13 +43,7 @@ This minimal starter ships with the main Gatsby configuration files you might ne
     npm run start
     ```
 
-    You might be wondering why should i use the same sandbox keys in both files. 
-    
-    The shortest answer is that when you run `yarn start` or `npm run start` netlify-lambda will generate a production build of the sample serverless function provided in this starter.
-    
-    what it means is that it's expecting a set of environment variables to be set to allow the payment process to be complete. 
-
-5.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -122,7 +97,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## Usefull Resources
+## Additional useful resources
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
@@ -132,7 +107,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For a complete run down on the Square Payments documentation, head [to their developers documentation site](https://developer.squareup.com/us/en).** In there you'll find not only a well documentated usage of the API that is available, but also some examples.
 
-- **For a set of testing values for your site, head to [this page](https://developer.squareup.com/docs/testing/test-values).** In tehre you'll find a list of card values that can be used for testing purposes.
+- **For a set of testing values for your site, head to [this page](https://developer.squareup.com/docs/testing/test-values).** In there you'll find a list of card values that can be used for testing purposes.
+
+- **A concise document on how to use the [Square Payments with Gatsby](https://www.gatsbyjs.org/docs/processing-payments-with-square/)** In here you'll be introduced on how you could use the Square Payments integrated nicely with Gatsby.
 
 ## Deploy
 
