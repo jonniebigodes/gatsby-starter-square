@@ -109,7 +109,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For a set of testing values for your site, head to [this page](https://developer.squareup.com/docs/testing/test-values).** In there you'll find a list of card values that can be used for testing purposes.
 
-- **A concise document on how to use the [Square Payments with Gatsby](https://www.gatsbyjs.org/docs/processing-payments-with-square/)** In here you'll be introduced on how you could use the Square Payments integrated nicely with Gatsby.
+- **A concise document on how to use the [Square Payments with Gatsby](https://www.gatsbyjs.org/docs/processing-payments-with-square/)** In here you'll be introduced on how you can integrate Square Payments nicely with Gatsby.
 
 ## Deploy
 
