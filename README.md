@@ -21,6 +21,18 @@ If you want to get a sneak peak of how the starter looks like, take a look [here
     gatsby new [my-awesome-site] https://github.com/jonniebigodes/gatsby-starter-square
     ```
 
+    Alternatively you can directly clone the repo with:
+    
+    ```shell
+    git clone https://github.com/jonniebigodes/gatsby-starter-square
+    ```
+
+    You might have noticed that the development command is a bit different from other starters used by Gatsby.
+
+    The reason behind this is simple, when you issue this command it will concurrently create a development build for your site and also build the sample serverless function, to allow the full extent of this starter. 
+
+    Should you have your own backend solution, you'll need to adjust accordingly.
+
 2. **Setup a Square account**
 
     Set up a developer account in the [Square developer portal](https://squareup.com/signup?v=developers) to get started. 
@@ -33,11 +45,20 @@ If you want to get a sneak peak of how the starter looks like, take a look [here
 
     Create your own `.env` file with the information provided in the Square developer portal.
     
-    Run the following command to start your development mode:
+    Run the following command to start your site in development:
+
+    When using yarn you should issue:
 
     ```shell
     yarn start
     ```
+
+    If you don't have Yarn installed, or prefer to use npm, you can still use this starter without any issues. Just use the following command:
+
+    ```shell
+    npm run start
+    ```
+
 
 4.  **Open the source code and start editing!**
 
