@@ -6,6 +6,8 @@ Kick off your next Gatsby project with [Square](https://squareup.com/us/en) usin
 
 This minimal starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React and also a sample serverless function to complete the payment process. 
 
+As this starter matures it will probably offer more possibilities and options based on the Square payments options. Be on the lookout.
+
 ## Quick start
 
 1.  **Create a Gatsby site.**
