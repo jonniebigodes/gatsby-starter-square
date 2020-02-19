@@ -8,6 +8,8 @@ This minimal starter ships with the main Gatsby configuration files you might ne
 
 As this starter matures it will probably offer more possibilities and options based on the Square payments options. Be on the lookout.
 
+If you want to get a sneak peak of how the starter looks like, take a look [here](https://example-site-for-square-starter.netlify.com/) for the deployed version and the code used for it in [here](https://github.com/jonniebigodes/example-site-for-square-starter)
+
 ## Quick start
 
 1.  **Create a Gatsby site.**
