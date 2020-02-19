@@ -17,7 +17,7 @@ const PaymentReciept = ({ location }) => {
         <h2 style={{ textAlign: "center" }}>
           Here's your payment reciept information:
         </h2>
-        {state !== null ? (
+        {state === null ? (
           <h2> No payment information is present.</h2>
         ) : (
           <pre>{JSON.stringify(state.paymentInfo, null, 2)}</pre>
