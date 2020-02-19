@@ -31,18 +31,10 @@ As this starter matures it will probably offer more possibilities and options ba
 
     Create your own `.env` file with the information provided in the Square developer portal.
     
-    Run the following command based on your chosen package manager:
-
-    with Yarn:
+    Run the following command to start your development mode:
 
     ```shell
     yarn start
-    ```
-    
-    or with npm:
-
-    ```shell
-    npm run start
     ```
 
 4.  **Open the source code and start editing!**
@@ -66,7 +58,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── gatsby-config.js
     ├── LICENSE
     ├── netlify.toml
-    ├── package-lock.json
     ├── yarn.lock
     ├── package.json
     └── README.md
@@ -93,7 +84,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 10.  **`netlify.toml`**: The configuration file required for building the starter in [Netlify](https://www.netlify.com/). 
 
-10. **`package-lock.json`** and **`yarn.lock`** (See `package.json` below, first). Both these files are automatically generated based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`yarn.lock`** (See `package.json` below, first). Both these files are automatically generated based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
